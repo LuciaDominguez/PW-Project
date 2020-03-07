@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet2" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel=stylesheet  type="text/css" href="css/main.css">
+    <link rel=stylesheet  type="text/css" href="css/login.css">
+    <title>Home</title>
+</head>
+<body>
+  <!--Para la barra-->
+    <div class="box-model">
+        <nav class="navbar navbar-expand-lg navbar-light navigation">
+            <a class="navbar-brand" href="index.html">
+                <img src="resources/LogoPC.jpg" alt="" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link letter1" href="#">Componentes base<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link letter1" href="#">Accesorios<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link letter1" href="#">Almacenamiento<span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0"> 
+                    <input class="form-control mr-sm-2" type="search" placeholder="Búsqueda" aria-label="Search">
+                    <button style=background-color:#14c439 class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+                  </form>
+                  <form class="form-inline my-2 my-lg-0 btnlogin">
+                    <button style=background-color:#14c439 class="btn btn-success my-2 my-sm-0" type="button" onclick="document.getElementById('id01').style.display='block'">Login</button>
+                  </form>
+              </div>
+          </nav>
+    </div>
+    <!--Para el resto del cuerpo-->
+    <div class="box-model">
+        <div class="content">
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                  <img src="resources/temp.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                  <img src="resources/temp2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                  <img src="resources/temp3.jpg" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div style="text-align:right">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+              </div>
+              <div class="dashboard table-responsive" style="overflow-x: auto;">
+                <table class="table" >
+                  <tr>
+                    <th class="letter3" colspan="4">
+                      <a href="#" class="dashtitle">Ofertas de hoy</a>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="letter2">
+                      <div>
+                        <a href="comprar.html">
+                          <img src="resources/products/corei7.jpg" style="width: 90px; height:90px;"></img>
+                        </a>
+                      </div>
+                      <div class="name">
+                      <a href="comprar.html" class="dashObj">
+                        Procesador Intel Core i7-9700
+                      </a>
+                    </div>
+                    </td>
+                    <td class="letter2">
+                      <div>
+                        <a href="#">
+                          <img src="resources/products/Electronica-No-Breaks-y-UPS-CyberPower-UT1000G-204924-v1Taz69Z9oE711Zo.jpg"></img>
+                        </a>
+                      </div>
+                      <div class="name">
+                      <a href="#" class="dashObj">
+                        Producto de prueba...Hola
+                      </a>
+                    </div>
+                    </td>
+                    <td class="letter2">
+                      <div>
+                        <a href="#">
+                          <img src="resources/products/Electronica-Reguladores-de-Voltaje-Tripp-Lite-TLP606B-129520-DStyLCXLsa7X7v7B.jpg"></img>
+                        </a>
+                      </div>
+                      <div class="name">
+                      <a href="#" class="dashObj">
+                        Producto de prueba...Hola
+                      </a>
+                    </div>
+                    </td>
+                    <td class="letter2">
+                      <div>
+                        <a href="#">
+                          <img src="resources/products/Hardware-Tarjetas-de-Video-MSI-RTX-2060-GAMING-Z-6G-323018-ErYjUAYkBH7rNmsn.jpg"></img>
+                        </a>
+                      </div>
+                      <div class="name">
+                      <a href="#" class="dashObj">
+                        Producto de prueba...Hola
+                      </a>
+                    </div>
+                    </td>
+                  </tr>
+                </table>
+            </div>
+
+            <div class="dashboard table-responsive" style="overflow-x: auto;">
+              <table class="table" >
+                <tr>
+                  <th class="letter3" colspan="4">
+                    <a href="#" class="dashtitle">Lo más vendido</a>
+                  </th>
+                </tr>
+                <tr>
+                  <td class="letter2">
+                    <div>
+                      <a href="#">
+                        <img src="resources/products/Electronica-No-Breaks-y-UPS-APC-SMT1500-130570-urqE6fO1znGrP82e.jpg"></img>
+                      </a>
+                    </div>
+                    <div class="name">
+                    <a href="#" class="dashObj">
+                      Producto de prueba...Hola
+                    </a>
+                  </div>
+                  </td>
+                  <td class="letter2">
+                    <div>
+                      <a href="#">
+                        <img src="resources/products/Electronica-No-Breaks-y-UPS-CyberPower-UT1000G-204924-v1Taz69Z9oE711Zo.jpg"></img>
+                      </a>
+                    </div>
+                    <div class="name">
+                    <a href="#" class="dashObj">
+                      Producto de prueba...Hola
+                    </a>
+                  </div>
+                  </td>
+                  <td class="letter2">
+                    <div>
+                      <a href="#">
+                        <img src="resources/products/Electronica-Reguladores-de-Voltaje-Tripp-Lite-TLP606B-129520-DStyLCXLsa7X7v7B.jpg"></img>
+                      </a>
+                    </div>
+                    <div class="name">
+                    <a href="#" class="dashObj">
+                      Producto de prueba...Hola
+                    </a>
+                  </div>
+                  </td>
+                  <td class="letter2">
+                    <div>
+                      <a href="#">
+                        <img src="resources/products/Hardware-Tarjetas-de-Video-MSI-RTX-2060-GAMING-Z-6G-323018-ErYjUAYkBH7rNmsn.jpg"></img>
+                      </a>
+                    </div>
+                    <div class="name">
+                    <a href="#" class="dashObj">
+                      Producto de prueba...Hola
+                    </a>
+                  </div>
+                  </td>
+                </tr>
+              </table>
+          </div>
+
+          <div class="dashboard table-responsive" style="overflow-x: auto;">
+            <table class="table" >
+              <tr>
+                <th class="letter3" colspan="4">
+                  <a href="#" class="dashtitle">Nuevos productos</a>
+                </th>
+              </tr>
+              <tr>
+                <td class="letter2">
+                  <div>
+                    <a href="#">
+                      <img src="resources/products/Electronica-No-Breaks-y-UPS-APC-SMT1500-130570-urqE6fO1znGrP82e.jpg"></img>
+                    </a>
+                  </div>
+                  <div class="name">
+                  <a href="#" class="dashObj">
+                    Producto de prueba...Hola
+                  </a>
+                </div>
+                </td>
+                <td class="letter2">
+                  <div>
+                    <a href="#">
+                      <img src="resources/products/Electronica-No-Breaks-y-UPS-CyberPower-UT1000G-204924-v1Taz69Z9oE711Zo.jpg"></img>
+                    </a>
+                  </div>
+                  <div class="name">
+                  <a href="#" class="dashObj">
+                    Producto de prueba...Hola
+                  </a>
+                </div>
+                </td>
+                <td class="letter2">
+                  <div>
+                    <a href="#">
+                      <img src="resources/products/Electronica-Reguladores-de-Voltaje-Tripp-Lite-TLP606B-129520-DStyLCXLsa7X7v7B.jpg"></img>
+                    </a>
+                  </div>
+                  <div class="name">
+                  <a href="#" class="dashObj">
+                    Producto de prueba...Hola
+                  </a>
+                </div>
+                </td>
+                <td class="letter2">
+                  <div>
+                    <a href="#">
+                      <img src="resources/products/Hardware-Tarjetas-de-Video-MSI-RTX-2060-GAMING-Z-6G-323018-ErYjUAYkBH7rNmsn.jpg"></img>
+                    </a>
+                  </div>
+                  <div class="name">
+                  <a href="#" class="dashObj">
+                    Producto de prueba...Hola
+                  </a>
+                </div>
+                </td>
+              </tr>
+            </table>
+        </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="box-model">
+        <div class="footer">
+            <img src="resources/LogoPC.jpg" class="imgfooter"></img>
+            <footer>PC Garage &#169; 2020</footer>
+        </div>
+    </div>
+
+    <!--Log in-->
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="#" method="post">
+        <div class="container">
+          <label for="uname"><b>Usuario</b></label>
+          <input type="text" placeholder="Ingrese usuario" name="uname" required>
+    
+          <label for="psw"><b>Contraseña</b></label>
+          <input type="password" placeholder="Ingrese contraseña" name="psw" required>
+            
+          <button type="submit" class="button">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember">Recuerdame
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">¿No tienes cuenta? <a href="registro.html">Registrate</a></span>
+        </div>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="js/slideshow.js"></script>
+</body>
+</html>

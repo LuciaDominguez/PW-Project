@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Garage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel=stylesheet  type="text/css" href="css/comprar.css">
+    <link rel=stylesheet  type="text/css" href="css/login.css">
+</head>
+<body>
+     <!--Para la barra-->
+     <div class="box-model">
+        <nav class="navbar navbar-expand-lg navbar-light navigation">
+            <a class="navbar-brand" href="index.html">
+                <img src="resources/LogoPC.jpg" alt="" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link letter1" href="#">Componentes base<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link letter1" href="#">Accesorios<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link letter1" href="#">Almacenamiento<span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0"> 
+                    <input class="form-control mr-sm-2" type="search" placeholder="Búsqueda" aria-label="Search">
+                    <button style=background-color:#14c439 class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+                  </form>
+                  <form class="form-inline my-2 my-lg-0 btnlogin">
+                    <button style=background-color:#14c439 class="btn btn-success my-2 my-sm-0" type="button" onclick="document.getElementById('id01').style.display='block'">Login</button>
+                  </form>
+              </div>
+          </nav>
+    </div>
+
+    <!---->
+    <div class="box-model">
+        <div class="content">
+            <div class="formath1">
+            <h1 class="nombre">
+               <b>Procesador Intel Core i7-9700 de Novena Generación, 3.0 GHz (hasta 4.7 GHz) con Intel HD Graphics 630, Socket 1151, Caché 12 MB, Octa-Core, 14nm.</b>
+            </h1>
+        </div>
+    <div class="format1">
+        <div class="right">
+        <table class="ventaT2">
+            <tr>
+                <td class="ventatd2">
+                    <img src="resources/products/corei7.jpg" class="img">
+                </td>
+            </tr>
+        </table>
+     </div>
+        <table class="ventaT">
+            <tr>
+              <td class="ventatd">
+                <div class="marcaspace">
+                <img src="resources/marcas/intel.png" class="marca"></img>
+                </div>
+                <span><b>Sku</b>: 317572</span>
+                <br>
+                <span><b>Modelo</b>: BX80684I79700</span>
+                <br>
+                <span><b>Garantia</b>: 1 año</span>
+                <br>
+              </td>
+              <td>
+                  <div class="information">
+                 <b>Precio Precio con IVA:<br>
+                  $4,999.00</b> 
+                    </div>
+                  <a href="#">
+                    <img src="resources/button.png" class="btnbuy">
+                  </a>
+              </td>
+            </tr>
+          </table>  
+         </div> 
+         <div class="format2">
+            <h2 class="formath2">
+                Especificaciones
+            </h2>
+            <table class="detalles" text-align = "center">
+                <tr>
+                  <th>Marca</th>
+                  <td>Intel</td>
+                </tr>
+                <tr>
+                  <th>Series</th>
+                  <td>Intel i7</td>
+                </tr>
+                <tr>
+                  <th>Generación</th>
+                  <td>Novena Generación</td>
+                </tr>
+                <tr>
+                  <th>Núcleos</th>
+                  <td>8 núcleos</td>
+                </tr>
+                <tr>
+                  <th>Velocidad del Procesador</th>
+                  <td>3 GHz</td>
+                </tr>
+                <tr>
+                  <th>Voltaje</th>
+                  <td>65 Watts</td>
+                </tr>
+                <tr>
+                  <th>Socket del Procesador</td>
+                  <td>LGA 1151</td>
+                </tr>
+              </table>
+         </div>
+        </div>
+    </div>
+
+     <!--Footer-->
+     <div class="box-model">
+        <div class="footer">
+            <img src="resources/LogoPC.jpg" class="imgfooter"></img>
+            <footer>PC Garage &#169; 2020</footer>
+        </div>
+    </div>
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="#" method="post">
+          <div class="container">
+            <label for="uname"><b>Usuario</b></label>
+            <input type="text" placeholder="Ingrese usuario" name="uname" required>
+      
+            <label for="psw"><b>Contraseña</b></label>
+            <input type="password" placeholder="Ingrese contraseña" name="psw" required>
+              
+            <button type="submit" class="button">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember">Recuerdame
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">¿No tienes cuenta? <a href="registro.html">Registrate</a></span>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
